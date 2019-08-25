@@ -36,16 +36,32 @@ padding-top:100px
    margin-top: 50px
 }
 
-#work{
+ #work{
    text-align: center;
    margin-top:50px;
 }
-#what{
+/* #what{
    padding-top:20px;
 }
-.design, .management, .development{
+.desin-showing, .management, .development{
    display:none;
+}  */
+
+.activities{
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   text-align: center;
+   padding-top: 20px;
+   
+ }
+ .design-showing, .development-showing, .product-showing{
+   display: none;
+ }
+.design-hidden, .development-hidden, .product-hidden{
+   cursor: pointer;
 }
+
 
 #portfolio{
    text-align: center;
@@ -81,7 +97,6 @@ input, textarea, button{
 .btn button{
    padding: 7px 10px;
    width: 150px;
-   
    transition: border 0.2s;
    font-size: 1.2rem;
 }
