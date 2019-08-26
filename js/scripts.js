@@ -18,7 +18,6 @@ $(document).ready(function () {
 
   $(".btn").click(function(){
     var person=$("#user-name").val();
-    if 
     alert("Hello "+ person + "," + "your message has been received. Thank you for reaching out to us.");
   });
 });
