@@ -16,8 +16,23 @@ $(document).ready(function () {
     $(".product-hidden").toggle();
   });
 
-  $(".btn").click(function(){
-    var person=$("#user-name").val();
-    alert("Hello "+ person + "," + "your message has been received. Thank you for reaching out to us.");
+  $("#sbmt").click(function(event)
+  {
+    event.preventDefault();
+
+    var email=$("#contact-email").val();
+
+    if($("#user-name").val()==""){
+      alert("Please input name")
+    }
+    else if($("#contact-email").val()==""){
+      alert("Please input email")
+    }
+    else if($("#message").val()==""){
+      alert("Please input your message")
+    }
+  
+    else{
+    alert("Hello "+ email + "," + "your message has been received. Thank you for reaching out to us.");}
   });
 });
